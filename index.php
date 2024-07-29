@@ -1,14 +1,12 @@
 <?php
 $document_root = $_SERVER['DOCUMENT_ROOT'];
 require_once $document_root . "/includes/all_includes.php";
-$website_data = new website(SITE, $database);
-$website_details = $website_data->get_website_details();
-// $distributor = new distributor($database);
-$settings = new settings($database);
-$android_link = $settings->setting('android_link');
-$ios_link = $settings->setting('ios_link');
-?>
 
+$android_link = $settings_instance->setting('android_link');
+$ios_link = $settings_instance->setting('ios_link');
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -258,7 +256,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>500MB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("data_share_500mb");?>
+                  <?= $website_instance->pricing_data("data_share_500mb");?>
   
                 </li>
                 <li>30days</li>
@@ -268,7 +266,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>
   
                   &#8358;
-                  <?= $website_data->pricing_data("data_share_1gb");?>
+                  <?= $website_instance->pricing_data("data_share_1gb");?>
   
                 </li>
                 <li>30days</li>
@@ -278,7 +276,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>
   
                   &#8358;
-                  <?= $website_data->pricing_data("data_share_2gb");?>
+                  <?= $website_instance->pricing_data("data_share_2gb");?>
   
                 </li>
                 <li>30days</li>
@@ -288,7 +286,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>
   
                   &#8358;
-                  <?= $website_data->pricing_data("data_share_3gb");?>
+                  <?= $website_instance->pricing_data("data_share_3gb");?>
   
                 </li>
                 <li>30days</li>
@@ -298,7 +296,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>
   
                   &#8358;
-                  <?= $website_data->pricing_data("data_share_5gb");?>
+                  <?= $website_instance->pricing_data("data_share_5gb");?>
   
                 </li>
                 <li>30days</li>
@@ -307,7 +305,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>10.0GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("data_share_10gb");?>
+                  <?= $website_instance->pricing_data("data_share_10gb");?>
                 </li>
                 <li>60days</li>
               </ul>
@@ -320,7 +318,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>200MB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("glo_cg_200mb_14days");?>
+                  <?= $website_instance->pricing_data("glo_cg_200mb_14days");?>
   
                 </li>
                 <li>14days</li>
@@ -329,7 +327,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>500MB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("glo_cg_500mb_14days");?>
+                  <?= $website_instance->pricing_data("glo_cg_500mb_14days");?>
   
                 </li>
                 <li>14days</li>
@@ -338,7 +336,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>500MB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("glo_cg_500mb_30days");?>
+                  <?= $website_instance->pricing_data("glo_cg_500mb_30days");?>
   
                 </li>
                 <li>30days</li>
@@ -347,7 +345,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>1.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("glo_cg_1gb_30days");?>
+                  <?= $website_instance->pricing_data("glo_cg_1gb_30days");?>
   
                 </li>
                 <li>30days</li>
@@ -356,7 +354,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>2.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("glo_cg_2gb_30days");?>
+                  <?= $website_instance->pricing_data("glo_cg_2gb_30days");?>
   
                 </li>
                 <li>30days</li>
@@ -365,7 +363,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>3.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("glo_cg_3gb_30days");?>
+                  <?= $website_instance->pricing_data("glo_cg_3gb_30days");?>
   
                 </li>
                 <li>30days</li>
@@ -374,7 +372,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>5.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("glo_cg_5gb_30days");?>
+                  <?= $website_instance->pricing_data("glo_cg_5gb_30days");?>
   
                 </li>
                 <li>30days</li>
@@ -383,7 +381,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>10GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("glo_cg_10gb_30days");?>
+                  <?= $website_instance->pricing_data("glo_cg_10gb_30days");?>
   
                 </li>
                 <li>30days</li>
@@ -397,7 +395,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>100MB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("airtel_100mb_7days");?>
+                  <?= $website_instance->pricing_data("airtel_100mb_7days");?>
   
                 </li>
                 <li>7days</li>
@@ -406,7 +404,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>300MB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("airtel_300mb_7days");?>
+                  <?= $website_instance->pricing_data("airtel_300mb_7days");?>
                 </li>
                 <li>7days</li>
               </ul>
@@ -414,7 +412,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>500MB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("airtel_500mb_30days");?>
+                  <?= $website_instance->pricing_data("airtel_500mb_30days");?>
   
                 </li>
                 <li>30days</li>
@@ -424,7 +422,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>1.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("airtel_1gb_30days");?>
+                  <?= $website_instance->pricing_data("airtel_1gb_30days");?>
                 </li>
                 <li>30days</li>
               </ul>
@@ -432,7 +430,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>2.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("airtel_2gb_30days");?>
+                  <?= $website_instance->pricing_data("airtel_2gb_30days");?>
   
                 </li>
                 <li>30days</li>
@@ -440,7 +438,7 @@ $ios_link = $settings->setting('ios_link');
               <ul>
                 <li>5.00GB</li>
                 <li> &#8358;
-                  <?= $website_data->pricing_data("airtel_5gb_30days");?>
+                  <?= $website_instance->pricing_data("airtel_5gb_30days");?>
                 </li>
   
                 <li>30days</li>
@@ -448,14 +446,14 @@ $ios_link = $settings->setting('ios_link');
               <ul>
                 <li>10GB</li>
                 <li>&#8358;
-                  <?= $website_data->pricing_data("airtel_10gb_30days");?>
+                  <?= $website_instance->pricing_data("airtel_10gb_30days");?>
                 </li>
                 <li>30days</li>
               </ul>
               <ul>
                 <li>15.0GB</li>
                 <li>&#8358;
-                  <?= $website_data->pricing_data("airtel_15gb_30days");?>
+                  <?= $website_instance->pricing_data("airtel_15gb_30days");?>
                 </li>
                 <li>30days</li>
               </ul>
@@ -468,7 +466,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>1.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("9mobile_sme_1gb");?>
+                  <?= $website_instance->pricing_data("9mobile_sme_1gb");?>
   
                 </li>
                 <li>30days</li>
@@ -477,7 +475,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>1.5GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("9mobile_sme_1_5gb");?>
+                  <?= $website_instance->pricing_data("9mobile_sme_1_5gb");?>
   
                 </li>
                 <li>30days</li>
@@ -486,7 +484,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>2GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("9mobile_sme_2gb");?>
+                  <?= $website_instance->pricing_data("9mobile_sme_2gb");?>
                 </li>
                 <li>30days</li>
               </ul>
@@ -494,7 +492,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>2.5GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("9mobile_sme_2_5gb");?>
+                  <?= $website_instance->pricing_data("9mobile_sme_2_5gb");?>
   
                 </li>
                 <li>30days</li>
@@ -503,7 +501,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>3GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("9mobile_sme_3gb");?>
+                  <?= $website_instance->pricing_data("9mobile_sme_3gb");?>
   
                 </li>
                 <li>30days</li>
@@ -512,7 +510,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>4.5GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("9mobile_sme_4_5gb");?>
+                  <?= $website_instance->pricing_data("9mobile_sme_4_5gb");?>
   
                 </li>
                 <li>30days</li>
@@ -521,7 +519,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>5.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("9mobile_sme_5gb");?>
+                  <?= $website_instance->pricing_data("9mobile_sme_5gb");?>
   
                 </li>
                 <li>30days</li>
@@ -530,7 +528,7 @@ $ios_link = $settings->setting('ios_link');
                 <li>6.00GB</li>
                 <li>
                   &#8358;
-                  <?= $website_data->pricing_data("9mobile_sme_6gb");?>
+                  <?= $website_instance->pricing_data("9mobile_sme_6gb");?>
   
                 </li>
                 <li>30days</li>
