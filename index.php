@@ -647,13 +647,16 @@ $ios_link = $settings_instance->setting('ios_link');
           <li><a href="//<?=SITE;?>/#about">How it works</a></li>
           <li><a href="//<?=SITE;?>/#price">Pricing</a></li>
           <li><a href="//<?=SITE;?>/#testimony">Testimonials</a></li>
+            <li><a href="//<?=SITE;?>/#faq">FAQs</a></li>
         </ul>
         <ul>
-          <h3>Policies</h3>
-          <li><a href="//<?=SITE;?>/#faq">FAQs</a></li>
-          <li><a href="//<?=SITE;?>/#faq">Privacy Policy</a></li>
-          <!-- <li><a href="#testimony">Testimonials</a></li> -->
+          <h3>Contact</h3>
+          <li><a href="//<?=SITE;?>">Email: support@kirapay.ng </a></li>
+          <li><a href="//<?=SITE;?>">Address: SF 201, Anafara Plaza, <br/>Gwarimpa, Abuja</a></li>
+          <li><a href="">Phone: 08061155907</a></li>
         </ul>
+
+
 
       </div>
       <div class="copy">
