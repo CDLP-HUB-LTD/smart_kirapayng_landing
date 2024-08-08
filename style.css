@@ -175,7 +175,7 @@ nav {
   text-decoration: none;
   border-radius: 10rem;
   padding: 1rem 1.8rem;
-  color: var(--primaryColor);
+  color: var(--white);
   font-weight: 500;
 }
 
@@ -196,11 +196,11 @@ nav {
 
 .active {
   color: var(--white) !important;
-  background-color: var(--primaryColor);
+  background-color: var(--brand);
   border: none;
   color: #FAFAFA;
   font-weight: 500;
-  box-shadow: .8rem 1.6rem 2.4rem 0rem rgba(6, 103, 68, 0.30);
+  /* box-shadow: .8rem 1.6rem 2.4rem 0rem rgba(6, 103, 68, 0.30); */
 }
 
 .active:hover {
