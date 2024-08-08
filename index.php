@@ -660,7 +660,7 @@ $ios_link = $settings_instance->setting('ios_link');
 
       </div>
       <div class="copy">
-        <p>Copyright @ <span style="font-weight: bold;">Synachsub@gmail.com</span>. All Rights Reserved.</p>
+        <p>Copyright @ <span style="font-weight: bold;">kirapay.ng@gmail.com</span>. All Rights Reserved.</p>
         <div class="copy-icon">
           <a href="<?= $website_details['twitter'];?>" class="icon-link"><i class="fa-brands fa-twitter icon"></i></a>
           <a href="<?= $website_details['facebook'];?>" class="icon-link"><i
