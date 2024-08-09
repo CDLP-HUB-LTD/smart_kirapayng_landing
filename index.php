@@ -20,7 +20,7 @@ $ios_link = $settings_instance->setting('ios_link');
     <link rel="shortcut icon" href="img/kiraLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2cb29d167e.js" crossorigin="anonymous"></script>
     <title>KiraPay </title>
 </head>
 <body>
