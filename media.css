@@ -1,0 +1,163 @@
+@media screen and (max-width: 768px) {
+    
+    
+    .nav-list{
+      display: none;
+    }
+
+    .hero{
+        flex-direction: column;
+      }
+      
+      .hero-text, .hero-tabs_container {
+        width: 100%;
+      }
+
+      #refer{
+        flex-direction: column-reverse;
+      }
+      .refer-img-container, .refer-desc{
+        width: 100%;
+      }
+      .refer-img-container img{
+        height: 50%;
+
+      }
+      .test-tab-container{
+        grid-template-columns: repeat(2, 1fr);
+
+      }
+
+      .faq-container {
+        position: relative;
+        width: 85%;
+      }
+  }
+
+
+  @media screen and (max-width: 430px) {
+    header {
+        padding: 0rem 2rem 8rem 2rem;
+      }
+      section {
+        padding: 8rem 2rem;
+      }
+      
+      footer {
+        padding: 2rem ;
+      }
+
+    nav .logo{
+        width: 100px;
+    }
+    .hero-text{
+        align-items: center;
+    }
+
+    .hero-text h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 32px;
+        text-align: center;
+    }
+    .hero-text p{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #enjoy{
+        flex-direction: column;
+    }
+    .enjoy-img-container, .enjoy-desc{
+        width: 100%;
+      }
+    .enjoy-img-container img{
+        height: 300px;
+      }
+      .enjoy-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .enjoy-desc h1{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -1.440000057220459px;
+        text-align: center;
+        color: #fff;
+      
+      }
+      .enjoy-desc p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.4000000059604645px;
+        text-align: center;
+      
+      }
+
+      #download{
+        flex-direction: column;
+      }
+      .download-img-container, .download-desc{
+        width: 100%;
+      }
+      .download-img-container img{
+        height: 300px
+      }
+
+      #testimonial p{
+        font-size: 18px;
+      }
+      .test-tab-container{
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .refer-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .refer-img-container img{
+        height: 300px;
+      }
+      .refer-desc p{
+        font-size: 26px;
+        line-height:28px;
+        text-align: center;  
+      }
+      .play{
+        display: flex;
+      }
+      .play a{
+        width: 50%;
+      }
+      .play a img{
+        width: 100%;
+      }
+
+      .footer-box{
+        flex-direction: column-reverse;
+        justify-content: center;
+      }
+      .footer-box ul{
+        width: 100%;
+        margin-top: 3rem;
+      }
+      .footer-box ul h3{
+        text-align: center;
+      }
+      .footer-box ul li{
+        text-align: center;
+      }
+      .footer-about ul{
+        display: flex;
+        justify-content: center;
+      }
+  }
