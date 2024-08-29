@@ -66,7 +66,7 @@ footer {
 header {
   position: relative;
   width: 100%;
-  background-image: url('/img/bgImage.png');
+  background-image: url('img/bgImage.png');
   background-repeat: no-repeat;
   background-position: center ;
   background-size: cover;
