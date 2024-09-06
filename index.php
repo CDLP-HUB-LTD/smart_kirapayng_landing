@@ -17,7 +17,7 @@ $ios_link = $settings_instance->setting('ios_link');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="shortcut icon" href="img/kiraLogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/LogoIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <script src="https://kit.fontawesome.com/2cb29d167e.js" crossorigin="anonymous"></script>
@@ -41,7 +41,35 @@ $ios_link = $settings_instance->setting('ios_link');
             <a href="/v/login" class="link">Login</a>
             <a href="/v/register" class="link active">Sign Up</a>
           </div>
+
+          <div class="openMenu"><img src="img/menu.png" alt=""></i></div>
+          <!-- <div class="openMenu"><i class="fa fa-bars"></i></div> -->
+          <ul class="menu-list">
+            <li><a href="//<?=SITE;?>/#service" class="linkk">Services</a></li>
+            <li><a href="//<?=SITE;?>/#price" class="linkk">Pricing</a></li>
+            <li><a href="//<?=SITE;?>/#about" class="linkk">About us</a></li>
+            <li><a href="//<?=SITE;?>/#faq" class="linkk">FAQ</a></li>
+            <div class="cta">
+              <a href="/v/login" class="login">Login</a>
+              <a href="/v/register" class="login act">Register</a>              
+            </div>
+
+            <!-- <div class="closeMenu"><i class="fa fa-times"></i></div> -->
+            </div>
+          </ul>
         </nav>
+
+          <!-- <div class="button">
+            <a href="/v/login" class="link">Login</a>
+            <a href="/v/register" class="link active">Sign Up</a>
+          </div> -->
+
+          <!-- mobile view -->
+
+        </nav>
+
+
+
 
 
         <div class="hero" id="home">
