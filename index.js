@@ -9,11 +9,20 @@ openMenu.addEventListener("click", show);
 closeMenu.addEventListener("click", close);
 
 function show() {
-	menu.style.display = "block";
-	menu.style.opacity = "0";
-	setTimeout(function () {
-		menu.style.opacity = "1";
-	}, 10);
+	if(menu.style.display === "none"){
+		menu.style.display = "flex";
+		// menu.style.opacity = "0";
+		// setTimeout(function () {
+		// 	menu.style.opacity = "1";
+		// }, 10);		
+	}else{
+		menu.style.display = "none";
+		// menu.style.opacity = "0";
+		// setTimeout(function () {
+		// 	menu.style.opacity = "1";
+		// }, 10);	
+	}
+
 	// mainMenu.style.display = "flex";
 	// mainMenu.style.top = "0";
 }
