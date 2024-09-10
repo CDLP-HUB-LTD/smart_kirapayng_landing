@@ -186,7 +186,7 @@ nav{
 #enjoy{
   position: relative;
   width: 100%;
-  background-image: url('img/enjoyBG.png');
+  background-image: url('/img/enjoyBG.png');
   background-repeat: no-repeat;
   background-position: center ;
   background-size: cover;
